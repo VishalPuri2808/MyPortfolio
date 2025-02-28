@@ -25,27 +25,19 @@ const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
       id: 1,
-      title: "Senior Software Engineer",
-      company: "Tech Solutions Inc.",
+      title: "Software Developer",
+      company: "Accenture Pvt Ltd",
       period: "2022 - Present",
       description: "Leading the development of cloud-native applications and implementing CI/CD pipelines. Mentoring junior developers and architecting scalable solutions.",
       technologies: ["AWS", "Kubernetes", "React", "Node.js", "TypeScript"]
     },
     {
       id: 2,
-      title: "Software Developer",
-      company: "Digital Innovations",
+      title: "Associate Software Developer",
+      company: "GlobalStep Pvt Ltd",
       period: "2020 - 2022",
       description: "Developed and maintained full-stack web applications. Collaborated with cross-functional teams to deliver high-quality software products.",
       technologies: ["Java", "Spring Boot", "Angular", "PostgreSQL", "Docker"]
-    },
-    {
-      id: 3,
-      title: "Junior Developer",
-      company: "StartUp Ventures",
-      period: "2018 - 2020",
-      description: "Built responsive web applications and contributed to the development of mobile apps. Participated in agile development processes.",
-      technologies: ["JavaScript", "React", "CSS", "MongoDB", "Express"]
     }
   ];
 

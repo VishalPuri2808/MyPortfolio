@@ -15,8 +15,29 @@ const Hero: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-          Hi, I'm <span className="text-primary">V</span>ishal Puri
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 flex flex-wrap items-center">
+        <TypeAnimation
+            sequence={[
+              'Hi,',
+              1000,
+              'Namaste,',
+              1000,
+              'Bonjour,',
+              1000,
+              'Ciao,',
+              1000,
+              'Hallo,',
+              1000,
+              'Hola,',
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+            cursor={false}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary"
+          />
+          <span className="text-4xl md:text-5xl lg:text-6xl font-bold"> I'm <span className="text-primary">V</span>ishal Puri</span>
         </h1>
         
         <h2 className="text-xl md:text-2xl text-gray-300 mb-6">

@@ -70,7 +70,7 @@ const Sidebar: React.FC = () => {
           {socialItems.map((item) => (
             <a
               key={item.id}
-              href={item.id === 'github' ? 'https://github.com' : 'https://linkedin.com'}
+              href={item.id === 'github' ? 'https://github.com/VishalPuri2808' : 'https://www.linkedin.com/in/vishalmpuri/'}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative flex items-center justify-center"

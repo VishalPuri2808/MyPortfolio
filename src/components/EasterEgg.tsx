@@ -81,7 +81,7 @@ const EasterEgg: React.FC = () => {
               </div>
               
               <div className="text-gray-300 mb-6">
-                <p>Hello! I'm John Doe, a passionate software engineer with 5+ years of experience.</p>
+                <p>Hello! I'm Vishal Puri, a passionate software engineer with 3 years of experience.</p>
                 <p className="mt-2">I specialize in building scalable web applications and implementing DevOps practices.</p>
                 <p className="mt-2">When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting with new technologies.</p>
               </div>

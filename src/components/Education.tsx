@@ -17,22 +17,21 @@ const Education: React.FC = () => {
     {
       id: 1,
       degree: "Master of Science in Computer Science",
-      institution: "Tech University",
-      location: "San Francisco, CA",
-      period: "2018 - 2020",
-      description: "Specialized in Artificial Intelligence and Cloud Computing with a focus on distributed systems and machine learning algorithms.",
+      institution: "University of Texas at Arlington",
+      location: "Arlington, TX",
+      period: "2023-2025",
+      description: "Specialized in Software Engineering and Cloud Computing with a focus on distributed systems and machine learning algorithms.",
       achievements: [
-        "GPA: 3.9/4.0",
-        "Research Assistant - Cloud Computing Lab",
-        "Published paper on 'Efficient Resource Allocation in Cloud Environments'"
+        "GPA: 3.8/4.0",
+        "Course Work - Design and Analysis of Algorithms , Software Engineering - Analysis, Design, and Testing, Distributed Systems, Machine Learning, Data Mining "
       ]
     },
     {
       id: 2,
       degree: "Bachelor of Science in Computer Engineering",
-      institution: "Engineering Institute",
-      location: "Boston, MA",
-      period: "2014 - 2018",
+      institution: "Dr. D Y Patil School of Engineering and Technology",
+      location: "Pune, India",
+      period: "2017 - 2021",
       description: "Comprehensive program covering both hardware and software aspects of computing systems with emphasis on software development methodologies.",
       achievements: [
         "Dean's List (All Semesters)",
@@ -42,10 +41,10 @@ const Education: React.FC = () => {
     },
     {
       id: 3,
-      degree: "AWS Certified Solutions Architect",
+      degree: "AWS Certified Developer Associate",
       institution: "Amazon Web Services",
       location: "Online",
-      period: "2021",
+      period: "2024",
       description: "Professional certification validating expertise in designing distributed systems on AWS.",
       achievements: [
         "Scored in the top 10% of test-takers",
