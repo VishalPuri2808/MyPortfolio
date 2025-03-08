@@ -4,6 +4,12 @@ import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section id="home" className="min-h-screen pt-16 md:pt-0 flex flex-col md:flex-row items-center justify-center px-4 md:px-8 lg:px-16 relative">
       {/* Background gradient */}
@@ -15,6 +21,7 @@ const Hero: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
+      <div className="mb-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 flex flex-wrap items-center">
         <TypeAnimation
             sequence={[
@@ -35,7 +42,7 @@ const Hero: React.FC = () => {
             speed={50}
             repeat={Infinity}
             cursor={false}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary"
+            className="text-primary mr-2"
           />
           <span className="text-4xl md:text-5xl lg:text-6xl font-bold"> I'm <span className="text-primary">V</span>ishal Puri</span>
         </h1>
@@ -43,6 +50,7 @@ const Hero: React.FC = () => {
         <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
           Software Engineer | Cloud & DevOps | Full Stack Developer
         </h2>
+      </div>  
         
         <div className="text-lg text-gray-400 mb-8 font-mono">
           <TypeAnimation
@@ -74,10 +82,19 @@ const Hero: React.FC = () => {
         </div>
         
         <div className="flex flex-wrap gap-4 mb-2">
-          <button className="btn-primary">Contact Me</button>
-          <button className="btn-outline flex items-center gap-2">
-            <Download className="w-4 h-4" /> Resume
+        <button 
+            onClick={scrollToContact}
+            className="btn-primary"
+          >
+            Contact Me
           </button>
+          <a 
+            href="/Vishal_Puri_Resume.pdf"
+            download
+            className="btn-outline flex items-center gap-2"
+          >
+            <Download className="w-4 h-4" /> Resume
+          </a>
         </div>
       </motion.div>
       

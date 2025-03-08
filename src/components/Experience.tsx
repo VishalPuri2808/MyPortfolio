@@ -28,7 +28,13 @@ const Experience: React.FC = () => {
       title: "Software Developer",
       company: "Accenture Pvt Ltd",
       period: "2022 - Present",
-      description: "Leading the development of cloud-native applications and implementing CI/CD pipelines. Mentoring junior developers and architecting scalable solutions.",
+      description: "·	Developed and deployed serverless functions to automate tasks and integrate services, resulting in reduced infrastructure costs and improved performance. Implemented monitoring and logging for Lambda functions to ensure reliability."+
+       "·	Established automated backup processes and disaster recovery plans to ensure data integrity and availability. Regularly tested recovery procedures to validate the effectiveness and reliability of DR plans."+
+"·	Developed and maintained Terraform scripts to manage infrastructure as code, enabling version control and collaborative infrastructure development."+
+"·	Deployed and managed Kubernetes clusters using EKS to orchestrate containerized applications, ensuring scalability and reliability. Implemented CI/CD pipelines to streamline the deployment process and reduce downtime."+
+"·	Provided comprehensive day-to-day support for AWS environments, including troubleshooting, performance tuning, and security management. Implemented monitoring and alerting solutions to proactively identify and resolve issues."+
+"·	Contributed significantly to the DevOps toolchain, specializing in end-to-end CI/CD pipelines in Jenkins, integration of Ansible for automation, and management of Ansible playbooks."+
+"·	Experienced in Docker container snapshots, attaching to a running container, managing directory structures, and managing containers.",
       technologies: ["AWS", "Kubernetes", "React", "Node.js", "TypeScript"]
     },
     {
