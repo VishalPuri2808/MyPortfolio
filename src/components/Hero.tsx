@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
             Contact Me
           </button>
           <a 
-            href="src\components\Vishal-Puri-Resume.pdf"
+            href="\Vishal-Puri-Resume.pdf"
             download
             className="btn-outline flex items-center gap-2"
           >
@@ -109,7 +109,7 @@ const Hero: React.FC = () => {
           <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-30"></div>
           <div className="relative bg-dark rounded-full overflow-hidden border border-gray-800 w-64 h-64 md:w-80 md:h-80">
             <img 
-              src="src\components\phto.jpg" 
+              src="/phto.jpg"
               alt="Vishal Puri" 
               className="w-full h-full object-cover"
             />
