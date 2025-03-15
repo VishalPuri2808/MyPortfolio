@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen pt-16 md:pt-0 flex flex-col md:flex-row items-center justify-center px-4 md:px-8 lg:px-16 relative">
+    <section id="home" className="min-h-screen px-4 md:px-8 pt-16 md:pt-0 flex flex-col md:flex-row items-center justify-center px-4 md:px-8 lg:px-16 relative">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-darker to-dark z-0"></div>
       

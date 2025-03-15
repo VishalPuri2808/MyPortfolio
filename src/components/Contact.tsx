@@ -1,44 +1,58 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Github, Linkedin, Mail } from 'lucide-react';
+import emailjs from '@emailjs/browser'; // Import EmailJS
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
-  
+  const [submitError, setSubmitError] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
-  
-  const handleSubmit = (e: React.FormEvent) => {
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+    setSubmitError(false);
+
+    try {
+      const response = await emailjs.send(
+        'service_epgnnif', // Replace with your EmailJS Service ID
+        'template_ar1bd9c', // Replace with your EmailJS Template ID
+        formData,
+        'GmS4A2XWnr-PI6Rcz' // Replace with your EmailJS Public Key
+      );
+
+      if (response.status === 200) {
+        setSubmitSuccess(true);
+        setFormData({ name: '', email: '', message: '' });
+
+        // Hide success message after 3 seconds
+        setTimeout(() => {
+          setSubmitSuccess(false);
+        }, 3000);
+      } else {
+        setSubmitError(true);
+      }
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setSubmitError(true);
+    } finally {
       setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormData({ name: '', email: '', message: '' });
-      
-      // Reset success message after 3 seconds
-      setTimeout(() => {
-        setSubmitSuccess(false);
-      }, 3000);
-    }, 1500);
+    }
   };
-  
+
   return (
     <section id="contact" className="min-h-screen pt-24 md:pl-16 px-4 md:px-8 lg:px-16 pb-20 relative">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark to-darker z-0"></div>
-      
       <motion.div
         className="relative z-10"
         initial={{ opacity: 0, y: 20 }}
@@ -47,7 +61,7 @@ const Contact: React.FC = () => {
         viewport={{ once: true }}
       >
         <h2 className="section-title">Contact Me</h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
           <div>
             <h3 className="text-xl font-bold mb-4 text-gray-200">Get In Touch</h3>
@@ -55,10 +69,10 @@ const Contact: React.FC = () => {
               Have a project in mind or want to discuss potential opportunities? 
               Feel free to reach out through the form or via my social links.
             </p>
-            
+
             <div className="space-y-4 mb-8">
               <a 
-                href="mailto:john.doe@example.com" 
+                href="mailto:pmvishal2808@gmail.com" 
                 className="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors"
               >
                 <Mail className="w-5 h-5" />
@@ -83,21 +97,8 @@ const Contact: React.FC = () => {
                 <span>linkedin.com/in/vishalmpuri</span>
               </a>
             </div>
-            
-            <div className="code-block">
-              <pre className="text-sm">
-{`// Let's build something amazing together
-function connect() {
-  return {
-    status: "Available for opportunities",
-    location: "Remote / Arlington",
-    interests: ["Software Development", "Cloud", "AI"]
-  };
-}`}
-              </pre>
-            </div>
           </div>
-          
+
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -113,7 +114,7 @@ function connect() {
                   placeholder="Your name"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="email" className="block text-gray-300 mb-2">Email</label>
                 <input
@@ -127,7 +128,7 @@ function connect() {
                   placeholder="your.email@example.com"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="message" className="block text-gray-300 mb-2">Message</label>
                 <textarea
@@ -141,7 +142,7 @@ function connect() {
                   placeholder="Your message here..."
                 />
               </div>
-              
+
               <motion.button
                 type="submit"
                 className="btn-primary w-full flex items-center justify-center gap-2"
@@ -157,14 +158,24 @@ function connect() {
                   </>
                 )}
               </motion.button>
-              
+
               {submitSuccess && (
                 <motion.div 
                   className="text-accent text-center"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                 >
-                  Message sent successfully!
+                  ✅ Message sent successfully!
+                </motion.div>
+              )}
+
+              {submitError && (
+                <motion.div 
+                  className="text-red-500 text-center"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  ❌ Failed to send message. Try again.
                 </motion.div>
               )}
             </form>
