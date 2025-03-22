@@ -58,12 +58,12 @@ const Experience: React.FC = () => {
       company: "GlobalStep Pvt Ltd",
       period: "March 2021 - February 2022",
       responsibilities: [
-        "Developed robust front-end solutions using Python, TypeScript, NextJs, and ReactJs, focusing on enhancing user experience while ensuring code maintainability and scalability.",
-"Leveraged OpenAI API, to develop applications with Natural Language Processing and Machine Learning functionalities.",
-"Led comprehensive testing and debugging procedures to seamlessly integrate TypeScript, Next.js, and React.js components with the OpenAI API, validating prompt engineering strategies and delivering top-tier software solutions.",
-"Orchestrated rigorous regression testing protocols, including unit, integration, and end-to-end testing, throughout development and production phases to ensure build stability and reliability.",
-"Developed a personalized video recommendation system using Large Language Models (LLM) to analyze video content and match it with user queries and chat interactions via prompts, focused on leadership principles and coaching.",
-      ],
+        "Automated insurance letter generation by integrating data extraction from Maven project files with Spring Boot, reducing manual effort by 40% and improving document accuracy, which led to a 20% increase in client retention.",
+"Spearheaded agile web application development, reducing time-to-market by 40% through effective use of JavaScript and React, while also creating detailed recruit runbooks that halved onboarding time.",
+"Leveraged Dynatrace for application monitoring and managed incidents via ServiceNow, cutting issue detection time by 30% and improving response time by 50%, while ensuring SLA compliance.",
+"Developed and deployed APIs using Google Cloud Functions for seamless integration between services, enabling automation of data processing workflows and reducing manual intervention by 40%.",
+"Led a cross-functional team in creating microservices architecture using Cloud Spanner and Kubernetes, enabling high availability and fault tolerance for critical applications."
+],
       technologies: ["Java", "Spring Boot", "Angular", "PostgreSQL", "Docker","Large Language Models (LLM)", "Testing", "Debugging", "Regression Testing"]
     },
   ];
