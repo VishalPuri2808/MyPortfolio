@@ -129,11 +129,18 @@ const Education: React.FC = () => {
             
                 {/* Middle: Badge */}
                 {edu.id === 3 && (
-                  <div className="flex items-left justify-center md:w-32">
-                    <img 
+                  <div className="flex items-center justify-center md:w-32">
+                    <a 
+                      href="https://www.credly.com/badges/692667fe-839a-41e3-a4ef-3c5683cb2229/public_url" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    ></a>
+                    <motion.img 
                       src="/badge.png" 
                       alt="AWS Developer Badge"
                       className="w-32 h-auto"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
                     />
                   </div>
                 )}
