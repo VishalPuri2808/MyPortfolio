@@ -108,10 +108,12 @@ const Hero: React.FC = () => {
         <div className="relative">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-30"></div>
           <div className="relative bg-dark rounded-full overflow-hidden border border-gray-800 w-64 h-64 md:w-80 md:h-80">
-            <img 
+            <motion.img  
               src="/phto.jpg"
               alt="Vishal Puri" 
               className="w-full h-full object-cover"
+              whileHover={{ scale: 1.2 }}
+              transition={{ type: "spring", stiffness: 500, damping: 50 }}
             />
           </div>
         </div>
