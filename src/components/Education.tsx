@@ -92,13 +92,15 @@ const Education: React.FC = () => {
           >
             {educationItems.map((edu) => (
               <motion.div 
-                key={edu.id} 
-                className="card relative border-l-4 border-accent pl-6"
-                variants={item}
-              >
-                <div className="absolute -left-2 top-6 w-4 h-4 rounded-full bg-accent"></div>
-                
-                <div className="flex items-start gap-4">
+              key={edu.id} 
+              className="card relative border-l-4 border-accent pl-6"
+              variants={item}
+            >
+              <div className="absolute -left-2 top-6 w-4 h-4 rounded-full bg-accent"></div>
+            
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                {/* Left: Icon + Description */}
+                <div className="flex items-start gap-4 flex-1">
                   <div className="hidden md:block mt-1">
                     {edu.id === 3 ? (
                       <Award className="w-10 h-10 text-accent" />
@@ -106,17 +108,12 @@ const Education: React.FC = () => {
                       <GraduationCap className="w-10 h-10 text-accent" />
                     )}
                   </div>
-                  
-                  <div className="flex-1">
+            
+                  <div>
                     <h3 className="text-xl font-bold text-light">{edu.degree}</h3>
-                    <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                      <p className="text-gray-300">{edu.institution}, {edu.location}</p>
-                      <p className="text-sm text-gray-400 flex items-center">
-                        <Calendar className="w-4 h-4 mr-1" /> {edu.period}
-                      </p>
-                    </div>
+                    <p className="text-gray-300">{edu.institution}, {edu.location}</p>
                     <p className="text-gray-400 mb-4">{edu.description}</p>
-                    
+            
                     {edu.achievements && (
                       <div className="mt-3">
                         <h4 className="text-sm font-semibold text-accent mb-2">ACHIEVEMENTS</h4>
@@ -129,7 +126,26 @@ const Education: React.FC = () => {
                     )}
                   </div>
                 </div>
-              </motion.div>
+            
+                {/* Middle: Badge */}
+                {edu.id === 3 && (
+                  <div className="flex items-left justify-center md:w-32">
+                    <img 
+                      src="/badge.png" 
+                      alt="AWS Developer Badge"
+                      className="w-32 h-auto"
+                    />
+                  </div>
+                )}
+            
+                {/* Right: Year */}
+                <div className="flex items-center text-sm text-gray-400 min-w-fit">
+                  <Calendar className="w-4 h-4 mr-1" /> {edu.period}
+                </div>
+              </div>
+            </motion.div>
+            
+              
             ))}
           </motion.div>
         </div>
