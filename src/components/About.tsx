@@ -7,7 +7,7 @@ const About: React.FC = () => {
   
   const skills = [
     "Java", "Python", "JavaScript", "TypeScript", "React", "Node.js", 
-    "AWS", "Docker", "Kubernetes", "CI/CD", "Git", "MongoDB"
+    "AWS", "Docker", "Kubernetes", "CI/CD", "Git", "MongoDB", "MySql", "PostgreSQL"
   ];
 
   return (
@@ -33,7 +33,7 @@ const About: React.FC = () => {
   "role": "Software Engineer",
   "experience": "3 years",
   "skills": [
-    "Java", "Python", "AWS", 
+    "Java", "Python","Javascript", "Angular", "AWS", 
     "DevOps", "React", "Kubernetes"
   ],
   "education": {
