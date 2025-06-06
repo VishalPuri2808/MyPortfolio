@@ -29,34 +29,33 @@ const Experience: React.FC = () => {
       company: "Accenture Pvt Ltd",
       period: "Feburary 2022 - July 2023",
       responsibilities: [
-        "Developed and deployed serverless functions to automate tasks and integrate services, resulting in reduced infrastructure costs and improved performance.",
-        "Implemented monitoring and logging for Lambda functions to ensure reliability.",
-        "Established automated backup processes and disaster recovery plans to ensure data integrity and availability.? Regularly tested recovery procedures to validate the effectiveness and reliability of DR plans.",
-        "Developed and maintained Terraform scripts to manage infrastructure as code, enabling version control and collaborative infrastructure development.",
-        "Deployed and managed Kubernetes clusters using EKS to orchestrate containerized applications, ensuring scalability and reliability. Implemented CI/CD pipelines to streamline the deployment process and reduce downtime.",
-        "Provided comprehensive day-to-day support for AWS environments, including troubleshooting, performance tuning, and security management. Implemented monitoring and alerting solutions to proactively identify and resolve issues.",
-        "Contributed significantly to the DevOps toolchain, specializing in end-to-end CI/CD pipelines in Jenkins, integration of Ansible for automation, and management of Ansible playbooks.",
-        "Experienced in Docker container snapshots, attaching to a running container, managing directory structures, and managing containers."
-      ],
+        "Designed and implemented cloud-native solutions on AWS (EC2, EKS, Lambda, S3) using Terraform and Python, cutting infrastructure deployment cycles by 40% while ensuring compliance with security and scalability standards.",
+        "Built CI/CD pipelines for enterprise-grade microservices using Jenkins and AWS Code Pipeline, enabling seamless deployment of 200+ daily builds across global regions.",
+"Automated Kubernetes cluster orchestration (EKS, GKE) with Helm charts and ArgoCD, optimizing scalability for high-traffic e-commerce platforms.",
+"Developed real-time monitoring systems (CloudWatch, Prometheus, Grafana) to track 10,000+ metrics, reducing incident response time by 30% through proactive anomaly detection.",
+"Secured multi-cloud environments by implementing IAM policies, VPC peering, and automated vulnerability scans, achieving 100% compliance with SOC 2 and ISO 27001 audits.",
+"Partnered with SRE teams to design disaster recovery strategies, including multi-region failover and automated rollbacks, ensuring 99.99% uptime for mission-critical systems.",
+"Administered day-to-day support for AWS environments, focusing on troubleshooting, performance tuning, security management, and implementing CloudWatch monitoring and alerting solutions."
+],
       technologies: [
         "Terraform",
         "Kubernetes",
-        "EKS",
-        "Docker",
+        "S3 Services",
+        "AWS IAM",
         "CI/CD",
-        "Jenkins",
+        "CLI",
         "Ansible",
         "CloudWatch",
         "Backup",
-        "Recovery",
-        "Security",
-        "Performance"]
+        "CloudWatch",
+        "CloudTrail",
+        "ORR"]
     },
     {
       id: 2,
       title: "Associate Software Developer",
       company: "GlobalStep Pvt Ltd",
-      period: "March 2021 - February 2022",
+      period: "July 2020 - February 2022",
       responsibilities: [
         "Automated insurance letter generation by integrating data extraction from Maven project files with Spring Boot, reducing manual effort by 40% and improving document accuracy, which led to a 20% increase in client retention.",
 "Spearheaded agile web application development, reducing time-to-market by 40% through effective use of JavaScript and React, while also creating detailed recruit runbooks that halved onboarding time.",
@@ -64,8 +63,20 @@ const Experience: React.FC = () => {
 "Developed and deployed APIs using Google Cloud Functions for seamless integration between services, enabling automation of data processing workflows and reducing manual intervention by 40%.",
 "Led a cross-functional team in creating microservices architecture using Cloud Spanner and Kubernetes, enabling high availability and fault tolerance for critical applications."
 ],
-      technologies: ["Java", "Spring Boot", "Angular", "PostgreSQL", "Docker","Large Language Models (LLM)", "Testing", "Debugging", "Regression Testing"]
+      technologies: ["Maven", "JavaScript", "React", "Agile", "Dynatrace","Google Cloud Functions", "Cloud Spanner", "Kubernetes", "Regression Testing"]
     },
+    {
+      id: 3,
+      title: "Teaching Assistant",
+      company: "Pune University",
+      period: "September 2019 - May 2020",
+      responsibilities: [
+        "Guided students in building scalable cloud architectures on AWS, including automated provisioning of resources using Terraform and CloudFormation.", 
+        "Delivered practical demonstrations on AWS services (S3, EC2, Lambda, RDS) and GCP to support students' comprehension of cloud architecture, security, and data management.",
+"Assisted in the delivery of cloud computing and big data curriculum, ensuring smooth lab sessions and hands-on assignments for 50+ students, fostering understanding of cloud service models, storage solutions, and data processing frameworks."
+],
+      technologies: ["Cloud", "AWS", "S3","GCP", "EC2", "Lambda","RDS", "Terraform", "CloudFormation"]
+    }
   ];
 
   const projects: ProjectItem[] = [
@@ -169,7 +180,7 @@ const Experience: React.FC = () => {
                   <p className="text-gray-300">{exp.company}</p>
                   <p className="text-sm text-gray-400">{exp.period}</p>
                 </div>
-                <ul className="list-disc list-inside space-y-2 text-gray-400 mb-4">
+                <ul className="list-disc  space-y-2 text-gray-400 mb-4">
                   {exp.responsibilities.map((responsibility, index) => (
                     <li key={index} className="leading-relaxed">
                       {responsibility}
