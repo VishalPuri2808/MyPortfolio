@@ -25,6 +25,28 @@ const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
       id: 1,
+      title: "Software Engineer",
+      company: "Amotions Inc.",
+      period: "June 2025 - Present",
+      responsibilities: [
+        "Developed robust front-end solutions using Python, TypeScript, NextJs, and ReactJs, focusing on enhancing user experience while ensuring code maintainability and scalability.",
+"Leveraged OpenAI API, to develop applications with Natural Language Processing and Machine Learning functionalities.",
+"Led comprehensive testing and debugging procedures to seamlessly integrate TypeScript, Next.js, and React.js components with the OpenAI API, validating prompt engineering strategies and delivering top-tier software solutions.",
+"Orchestrated rigorous regression testing protocols, including unit, integration, and end-to-end testing, throughout development and production phases to ensure build stability and reliability.",
+"Developed a personalized video recommendation system using Large Language Models (LLM) to analyze video content and match it with user queries and chat interactions via prompts, focused on leadership principles and coaching.",
+],
+      technologies: [
+        "Python",
+        "TypeScript",
+        "NextJs",
+        "ReactJs",
+        "OpenAI ",
+        "JSON",
+        "Large Language Models",
+        "Large Language Models"]
+    },
+    {
+      id: 1,
       title: "Software Developer",
       company: "Accenture Pvt Ltd",
       period: "Feburary 2022 - July 2023",
