@@ -25,40 +25,41 @@ const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
       id: 1,
-      title: "Software Engineer",
-      company: "Amotions Inc.",
-      period: "June 2025 - Present",
+      title: "Full Stack Developer",
+      company: "Dell Technologies",
+      period: "May 2024 - Present",
       responsibilities: [
-        "Developed robust front-end solutions using Python, TypeScript, NextJs, and ReactJs, focusing on enhancing user experience while ensuring code maintainability and scalability.",
-"Leveraged OpenAI API, to develop applications with Natural Language Processing and Machine Learning functionalities.",
-"Led comprehensive testing and debugging procedures to seamlessly integrate TypeScript, Next.js, and React.js components with the OpenAI API, validating prompt engineering strategies and delivering top-tier software solutions.",
-"Orchestrated rigorous regression testing protocols, including unit, integration, and end-to-end testing, throughout development and production phases to ensure build stability and reliability.",
-"Developed a personalized video recommendation system using Large Language Models (LLM) to analyze video content and match it with user queries and chat interactions via prompts, focused on leadership principles and coaching.",
+        "Built customer-facing modules in React with TypeScript/JavaScript backed by Java Spring Boot REST APIs, lifting conversion by 11% and improving LCP by 38%.",
+        "Orchestrated containerized microservices on AWS EKS (Kubernetes) using Docker, and engineered automated CI/CD via GitHub Actions cutting change lead time by 30%.", 
+        "Migrated reporting from MySQL to PostgreSQL; rewrote critical SQL using window functions and proper indexing, cutting p95 response from 420ms to 230ms.",
+        "Optimized a Node.js (Express) notification service using backpressure, batching, and idempotent retries, reducing message lag by 54% at peak.",
+        "Implemented cross-cloud backups from AWS S3 to GCP Cloud Storage with lifecycle/retention policies, achieving 99.95% restore success in drills.",
+        "Standardized branching, reviews and sprint rituals, mentored juniors and aligned stakeholders, lowering merge defects 22% and raising on-time sprint delivery 9%."
 ],
       technologies: [
-        "Python",
+        "Java",
         "TypeScript",
         "NextJs",
         "ReactJs",
         "OpenAI ",
         "JSON",
-        "Large Language Models",
+        "MySQL",
         "Large Language Models"]
     },
     {
       id: 1,
       title: "Software Developer",
-      company: "Accenture Pvt Ltd",
-      period: "Feburary 2022 - July 2023",
+      company: "Hexaware Technologies",
+      period: "July 2019 - July 2023",
       responsibilities: [
         "Designed and implemented cloud-native solutions on AWS (EC2, EKS, Lambda, S3) using Terraform and Python, cutting infrastructure deployment cycles by 40% while ensuring compliance with security and scalability standards.",
-        "Built CI/CD pipelines for enterprise-grade microservices using Jenkins and AWS Code Pipeline, enabling seamless deployment of 200+ daily builds across global regions.",
-"Automated Kubernetes cluster orchestration (EKS, GKE) with Helm charts and ArgoCD, optimizing scalability for high-traffic e-commerce platforms.",
-"Developed real-time monitoring systems (CloudWatch, Prometheus, Grafana) to track 10,000+ metrics, reducing incident response time by 30% through proactive anomaly detection.",
-"Secured multi-cloud environments by implementing IAM policies, VPC peering, and automated vulnerability scans, achieving 100% compliance with SOC 2 and ISO 27001 audits.",
-"Partnered with SRE teams to design disaster recovery strategies, including multi-region failover and automated rollbacks, ensuring 99.99% uptime for mission-critical systems.",
-"Administered day-to-day support for AWS environments, focusing on troubleshooting, performance tuning, security management, and implementing CloudWatch monitoring and alerting solutions."
-],
+        "Engineered microservices in Java/Spring Boot exposing REST APIs, increasing order-processing throughput 19% while sustaining 99.9% availability.",
+        "Architected a React + Node.js portal with typed interfaces, boosting SUS usability scores 17% and reducing front-end defects 28%.",
+        "Constructed MySQL schemas, foreign keys, and stored routines; tuned SQL with composite indexes to raise reconciliation accuracy from 92% to 99%.",
+        "Containerized workloads with Docker and orchestrated rollouts on Kubernetes (EKS), trimming infra costs 14% through autoscaling and right-sizing.",
+        "Streamlined CI/CD using GitHub Actions and contract-first API design, accelerating cadence from biweekly to weekly with zero rollback incidents.",
+        "Coordinated requirements workshops with product and QA to clarify acceptance criteria, reducing requirement churn 23% and stabilizing sprint velocity."
+  ],
       technologies: [
         "Terraform",
         "Kubernetes",
@@ -75,23 +76,9 @@ const Experience: React.FC = () => {
     },
     {
       id: 2,
-      title: "Associate Software Developer",
-      company: "GlobalStep Pvt Ltd",
-      period: "July 2020 - February 2022",
-      responsibilities: [
-        "Automated insurance letter generation by integrating data extraction from Maven project files with Spring Boot, reducing manual effort by 40% and improving document accuracy, which led to a 20% increase in client retention.",
-"Spearheaded agile web application development, reducing time-to-market by 40% through effective use of JavaScript and React, while also creating detailed recruit runbooks that halved onboarding time.",
-"Leveraged Dynatrace for application monitoring and managed incidents via ServiceNow, cutting issue detection time by 30% and improving response time by 50%, while ensuring SLA compliance.",
-"Developed and deployed APIs using Google Cloud Functions for seamless integration between services, enabling automation of data processing workflows and reducing manual intervention by 40%.",
-"Led a cross-functional team in creating microservices architecture using Cloud Spanner and Kubernetes, enabling high availability and fault tolerance for critical applications."
-],
-      technologies: ["Maven", "JavaScript", "React", "Agile", "Dynatrace","Google Cloud Functions", "Cloud Spanner", "Kubernetes", "Regression Testing"]
-    },
-    {
-      id: 3,
       title: "Teaching Assistant",
       company: "Pune University",
-      period: "September 2019 - May 2020",
+      period: "September 2018 - May 2019",
       responsibilities: [
         "Guided students in building scalable cloud architectures on AWS, including automated provisioning of resources using Terraform and CloudFormation.", 
         "Delivered practical demonstrations on AWS services (S3, EC2, Lambda, RDS) and GCP to support students' comprehension of cloud architecture, security, and data management.",
