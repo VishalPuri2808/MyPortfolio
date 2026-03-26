@@ -27,7 +27,7 @@ const Experience: React.FC = () => {
       id: 1,
       title: "Full Stack Developer",
       company: "Dell Technologies",
-      period: "May 2024 - Present",
+      period: "Feb 2025 - Present",
       responsibilities: [
         "Built customer-facing modules in React with TypeScript/JavaScript backed by Java Spring Boot REST APIs, lifting conversion by 11% and improving LCP by 38%.",
         "Orchestrated containerized microservices on AWS EKS (Kubernetes) using Docker, and engineered automated CI/CD via GitHub Actions cutting change lead time by 30%.", 
