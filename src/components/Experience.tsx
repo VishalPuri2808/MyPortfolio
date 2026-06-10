@@ -25,8 +25,8 @@ const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
       id: 1,
-      title: "Full Stack Developer",
-      company: "Dell Technologies",
+      title: "AI SOFTWARE DEVELOPER",
+      company: "AMOTIONS AI",
       period: "Feb 2025 - Present",
       responsibilities: [
         "Built customer-facing modules in React with TypeScript/JavaScript backed by Java Spring Boot REST APIs, lifting conversion by 11% and improving LCP by 38%.",
@@ -49,8 +49,8 @@ const Experience: React.FC = () => {
     {
       id: 1,
       title: "Software Developer",
-      company: "Hexaware Technologies",
-      period: "July 2019 - July 2023",
+      company: "ACCENTURE PVT LTD",
+      period: "Feb 2022 - July 2023",
       responsibilities: [
         "Designed and implemented cloud-native solutions on AWS (EC2, EKS, Lambda, S3) using Terraform and Python, cutting infrastructure deployment cycles by 40% while ensuring compliance with security and scalability standards.",
         "Engineered microservices in Java/Spring Boot exposing REST APIs, increasing order-processing throughput 19% while sustaining 99.9% availability.",
@@ -76,15 +76,17 @@ const Experience: React.FC = () => {
     },
     {
       id: 2,
-      title: "Teaching Assistant",
-      company: "Pune University",
-      period: "September 2018 - May 2019",
+      title: "Software Engineer",
+      company: "GLOBALSTEP",
+      period: "April 2021 - Feb 2022",
       responsibilities: [
-        "Guided students in building scalable cloud architectures on AWS, including automated provisioning of resources using Terraform and CloudFormation.", 
-        "Delivered practical demonstrations on AWS services (S3, EC2, Lambda, RDS) and GCP to support students' comprehension of cloud architecture, security, and data management.",
+        "Designed and executed manual, functional, regression, and smoke test cases to validate application workflows, identify defects, and support stable release cycles.", 
+        "Delivered practical demonstrations on AWS services (S3, EC2, Lambda, RDS) and GCP to support new joiners' comprehension of cloud architecture, security, and data management.",
+        "Logged, tracked, and verified defects using structured QA processes, collaborating with developers and product teams to reproduce issues and confirm fixes before deployment.",
+        "•	Supported end-to-end software quality assurance activities across SDLC phases, improving test coverage, release readiness, and overall product reliability.",
 "Assisted in the delivery of cloud computing and big data curriculum, ensuring smooth lab sessions and hands-on assignments for 50+ students, fostering understanding of cloud service models, storage solutions, and data processing frameworks."
 ],
-      technologies: ["Cloud", "AWS", "S3","GCP", "EC2", "Lambda","RDS", "Terraform", "CloudFormation"]
+      technologies: ["Regression","Testing","Cloud", "AWS", "S3","GCP", "EC2", "Lambda","RDS", "Terraform", "CloudFormation"]
     }
   ];
 
