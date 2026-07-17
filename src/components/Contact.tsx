@@ -72,11 +72,11 @@ const Contact: React.FC = () => {
 
             <div className="space-y-4 mb-8">
               <a 
-                href="mailto:pmvishal2808@gmail.com" 
+                href="mailto:pmvishal228@gmail.com" 
                 className="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>pmvishal2808@gmail.com</span>
+                <span>pmvishal2288@gmail.com</span>
               </a>
               <a 
                 href="https://github.com/VishalPuri2808" 
@@ -86,15 +86,6 @@ const Contact: React.FC = () => {
               >
                 <Github className="w-5 h-5" />
                 <span>github.com/VishalPuri2808</span>
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/vishalmpuri/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span>linkedin.com/in/vishalmpuri</span>
               </a>
             </div>
           </div>
