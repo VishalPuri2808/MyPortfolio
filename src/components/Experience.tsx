@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
       id: 1,
-      title: "AI SOFTWARE DEVELOPER",
+      title: "FORWARD DEPLOYED ENGINEER",
       company: "AMOTIONS AI",
       period: "Feb 2025 - Present",
       responsibilities: [
@@ -48,7 +48,7 @@ const Experience: React.FC = () => {
     },
     {
       id: 1,
-      title: "Software Developer",
+      title: "DEVOPS ENGINEER",
       company: "ACCENTURE PVT LTD",
       period: "Feb 2022 - July 2023",
       responsibilities: [
@@ -76,7 +76,7 @@ const Experience: React.FC = () => {
     },
     {
       id: 2,
-      title: "Software Engineer",
+      title: "Associate Software Engineer",
       company: "GLOBALSTEP",
       period: "April 2021 - Feb 2022",
       responsibilities: [
