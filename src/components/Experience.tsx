@@ -97,6 +97,7 @@ const Experience: React.FC = () => {
       description: "Built an AI-powered clinical documentation platform that converts doctor–patient audio or text conversations into structured SOAP notes, ICD-10 code recommendations, and visit summaries using GPT-4o-mini, Faster-Whisper, vector search, and FastAPI.",
       technologies:["Python", "FastAPI", "GPT-4o-mini", "OpenAI API", "Faster-Whisper", "ChromaDB", "Sentence Transformers", "React", "TypeScript", "Supabase", "PostgreSQL", "Docker"],
       githubUrl: "https://github.com/VishalPuri2808/clinicalDocAI-/tree/main/clinicaldoc_AI-main",
+      demoUrl: "https://drive.google.com/file/d/1cY4rKUK5GjcRrVIfUv6oKZIjo61aZ_O1/view",
       image: "https://images.unsplash.com/photo-1674027215016-0a4abfdbf1cc?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },{
       id: 2,
