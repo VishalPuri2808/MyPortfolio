@@ -93,6 +93,13 @@ const Experience: React.FC = () => {
   const projects: ProjectItem[] = [
     {
       id: 1,
+      title: "Clinical Doc AI",
+      description: "Built an AI-powered clinical documentation platform that converts doctor–patient audio or text conversations into structured SOAP notes, ICD-10 code recommendations, and visit summaries using GPT-4o-mini, Faster-Whisper, vector search, and FastAPI.",
+      technologies:["Python", "FastAPI", "GPT-4o-mini", "OpenAI API", "Faster-Whisper", "ChromaDB", "Sentence Transformers", "React", "TypeScript", "Supabase", "PostgreSQL", "Docker"],
+      githubUrl: "https://github.com/VishalPuri2808/clinicalDocAI-/tree/main/clinicaldoc_AI-main",
+      image: "https://unsplash.com/photos/a-computer-generated-image-of-a-human-brain-3wXVwtdaESA"
+    },{
+      id: 2,
       title: "Market Trend Analysis Using ML-LSTM Model",
       description: "Developed a Market Trend prediction web application using an LSTM (Long Short-Term Memory) model trained on historical stock data. ",
       technologies: ["JavaScript (ES6)", "Flask (app.py)", "Python", "TensorFlow/Keras", "Yahoo Finance API"],
@@ -100,7 +107,7 @@ const Experience: React.FC = () => {
       image: "https://images.unsplash.com/photo-1651341050677-24dba59ce0fd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      id: 2,
+      id: 3,
       title: "WEBCHATGPT - AI-POWERED CHATBOT",
       description: "ChatEngine with the advanced AI capabilities of OpenAI's GPT-3.5 model.",
       technologies: ["React", "Firebase", "Material UI", "Node.js"],
@@ -108,7 +115,7 @@ const Experience: React.FC = () => {
       image: "https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      id: 3,
+      id: 4,
       title: "CHEF-MATE: ANDROID APPLICATION - KOTLIN",
       description: "A comprehensive dashboard for monitoring CI/CD pipelines and infrastructure metrics.",
       technologies: ["Vue.js", "D3.js", "Express", "Docker", "Prometheus"],
@@ -117,7 +124,7 @@ const Experience: React.FC = () => {
       image: "https://images.unsplash.com/photo-1488992783499-418eb1f62d08?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      id: 4,
+      id: 5,
       title: "REMOTE STORAGE APPLICATION (Cloud based file storage)",
       description: " Created the storage system such that user can store file or data to cloud system.",
       technologies: ["Amazon Web Services (AWS)", "Front-End Development"],
@@ -125,7 +132,7 @@ const Experience: React.FC = () => {
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      id: 5,
+      id: 6,
       title: "HEART DISEASE PREDICTION SYSTEM",
       description: "A machine learning-powered web application using Django and Decision Tree to predict heart disease risk, with patient-doctor appointment management.",
       technologies: ["Python", "Django", "Scikit-learn", "Pandas", "HTML", "CSS", "JavaScript", "Streamlit", "CSV"],
@@ -133,7 +140,7 @@ const Experience: React.FC = () => {
       image: "https://images.unsplash.com/photo-1623134915837-d2fdb4f59035?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      id: 6,
+      id: 7,
       title: "THE CONNECT4 GAME",
       description: "Implemented Connect4 game using depth-limited alpha beta pruning with minimax algorithm",
       technologies: ["Java"],
