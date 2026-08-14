@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
             Contact Me
           </button>
           <a 
-            href="\Vishal-Puri-Resume.pdf"
+            href="\Vishal Puri - Resume.pdf"
             download
             className="btn-outline flex items-center gap-2"
           >
